@@ -29,17 +29,17 @@ body {
     background-color: #1A1A1A; 
   }
   
-  .container {
+  .container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
   }
   
-  .logo{ 
+  .logo-header{ 
     height: 60px; 
   }
-  .right a {
+  .links-header a {
     display: inline-block; 
     color: white;
     margin: 0 10px; 
@@ -50,7 +50,7 @@ body {
     border-radius: 2px;
   }
 
-  .right :hover{
+  .links-header :hover{
     border-color: white; 
   background-color: #2a2a2ad7;
   }
@@ -277,10 +277,6 @@ button {
   border-radius: 2px;
 }
 
-.boatPh{
-  background-color: #1A1A1A;
-}
-
 hr{
   color: white;
 }
@@ -326,6 +322,7 @@ hr{
 #carouselExample{
   margin-top: 25px;
 }
+
 
 
 
