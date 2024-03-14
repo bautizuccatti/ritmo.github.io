@@ -116,6 +116,7 @@ h2, h4 {
 
 .right-section {
   padding-right: 20px;
+  margin-right: 40px;
 }
 
 .gastronomia{
@@ -316,6 +317,7 @@ hr{
 
 .carousel slide{
   padding-top: 30px;
+  margin-top: 40px;
   
 }
 
@@ -323,6 +325,69 @@ hr{
   margin-top: 25px;
 }
 
+.info-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  text-align: center;
+}
+
+#info-title {
+  grid-column: 1 / -1;
+  margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+#info-ph {
+  grid-row: 2 / 3;
+  margin-left: 40px;
+}
+
+#info-description {
+  grid-row: 2 / 3;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 40px;
+  margin-left: 40px;
+
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  #info-title {
+    grid-column: 1 / -1;
+  }
+
+  #info-ph {
+    grid-row: 2 / 3;
+  }
+
+  #info-description {
+    grid-row: 3 / 4;
+  }
+}
+
+#video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-width: 100%; 
+  min-height: 100%; 
+}
 
 
 
