@@ -1,0 +1,1 @@
+document.body.innerHTML = document.body.innerHTML.replace(/Ritmo/g, '<span class="ritmo">Ritmo</span>');
