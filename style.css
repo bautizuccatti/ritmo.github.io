@@ -1,212 +1,130 @@
-/*header*/
-
+/*TODO - GENERAL*/
 body {
-    margin: 0;
-    padding: 0%;
-    font-family: "Work Sans", sans-serif;
-    background-color: #2a2a2a;
-    overflow-x: hidden; 
-  }
-  p{
-    color: white;
-  }
-  img{
-    border-radius: 1%;
-  }
-  #header {
-    background-color: rgba(255, 255, 255, 0.9); 
-    border-bottom: #6E7074 1px solid; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px; 
-    z-index: 1000;
-    transition: background-color 0.3s ease; 
-  }
-  
-  #header.opaque {
-    background-color: rgba(255, 255, 255, 0.9); 
-  }
-  
-  .container-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .logo-header{ 
-    height: 60px; 
-  }
-  .links-header a {
-    display: inline-block; 
-    color: #6E7074;
-    margin: 0 10px; 
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: solid transparent 1px; 
-    padding: 3px;
-    border-radius: 2px;
-    font-family: "Work Sans", sans-serif;
-    font-size: 18px;
-  }
-
-  .links-header :hover{
-    border-color: white; 
-    background-color: #2a2a2ad7;
-    color: white;
-    padding: 10px;
-  }
-
-  .content {
-    margin-top: 70px; 
-  }
-/*header*/
-
-/*main*/
-.content {
-  padding: 20px;
-}
-.first-img{
-    width: 750px;
-}
-
-h2, h4 {
   margin: 0;
-  color: white;
+  padding: 0%;
   font-family: "Work Sans", sans-serif;
-}  
-
-.content {
-  position: relative;
+  background-color: #393939;
+  overflow-x: hidden;
 }
 
-.about {
-  height: 100vh; 
-  width: 100%; 
-  margin-left: 0;
-  margin-right: 0;
-  background-image: url('IMG\ RITMO/.about'); 
-  background-size: cover; 
-  background-position: center; 
+img {
+  border-radius: 1%;
 }
 
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
+/*! HEADER*/
+#header {
+  border-bottom: #292929 2px solid;
+  background-color: #292929;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1000;
+  transition: background-color 0.5s ease;
 }
 
-.overlay h5 {
-  margin: 0;
-  background-color: #6e7074ea;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 2%;
-}
-
-.description {
-  margin: 10px 0;
-  background-color: #6e7074ea;
-  border-radius: 2%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
-  margin-bottom: 40px;
-}
-
-.left-section, .right-section {
-  flex: 1; 
-  display: flex; 
-  align-items: center; 
-}
-
-.right-section {
-  padding-right: 20px;
-  margin-right: 40px;
-}
-
-#gastronomy-title{
-  font-size: 30px;
-}
-
-
-
-#gastronomy-description{
-  margin-right: 20px;
-  margin-left: 20px;
-  text-align: left;
-}
-
-.gastronomia{
-  width: 400px; 
-  object-fit: cover;
-  margin-left: auto; 
-}
-
-
-.text {
-  text-align: center; 
-  color: white;
-}
-
-.text h2 {
-  margin-top: 0; 
-  color: white;
-}
-
-.container {
+#container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
 }
 
-.content {
-  flex: 1; 
-  padding-right: 20px; 
+#logo-header {
+  height: 60px;
 }
 
-.image {
-  flex: 1; 
+#links-header a {
+  display: inline-block;
+  color: #6E7074;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: solid transparent 1px;
+  padding: 3px;
+  border-radius: 2px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 350;
 }
 
-.contenedor {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-  grid-auto-rows: minmax(100px, auto); 
-  grid-gap: 5px; 
+#links-header :hover {
+  border-color: white;
+  background-color: #393939;
+  border: #292929 2px solid;
+  color: white;
+  padding: 10px;
 }
 
-.foto {
-  width: 100%;
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-.foto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(1);
+/*! FIN HEADER*/
+
+/*! FOOTER*/
+#links-footer {
+  flex-grow: 1;
+  text-align: center;
 }
 
-.foto :hover{
-  filter: none;
-  transition: all 0.50s;
+#links-footer a {
+  display: inline-block;
+  color: #6E7074;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: solid transparent 1px;
+  padding: 3px;
+  border-radius: 2px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 350;
 }
 
-
-.animated-img {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+#links-footer a:hover {
+  border-color: white;
+  background-color: #393939;
+  border: #292929 2px solid;
+  color: white;
+  padding: 10px;
 }
 
-
-.animated-img.show {
-  opacity: 1;
+footer {
+  border-top: white solid 1px;
+  margin-top: 25px;
+  padding: 20px;
+  color: white;
 }
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.additional-info {
+  margin-left: auto;
+}
+
+.additional-info h4 {
+  margin-bottom: 10px;
+}
+
+.additional-info a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+
 
 footer {
   border-top: white solid 1px;
@@ -224,26 +142,6 @@ footer {
   width: 100px; 
 }
 
-.links {
-  flex-grow: 1;
-  text-align: center;
-}
-
-.links a {
-  display: inline-block; 
-  color: white;
-  margin: 0 10px; 
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: solid transparent 1px; 
-  padding: 3px;
-  border-radius: 2px;
-}
-
-.links a:hover {
-  border-color: white; 
-  background-color: #2a2a2ad7;
-}
 
 .additional-info {
   margin-left: auto; 
@@ -258,175 +156,443 @@ footer {
   text-decoration: none;
   color: white;
 }
+/*! FIN FOOTER*/
 
-.instagram-logo {
-  width: 40px; /* Ajusta el tamaño según tus necesidades */
-  height: 40px; /* Ajusta el tamaño según tus necesidades */
-  /* Agrega otros estilos según lo requieras */
-}
+/*------------*/
 
-/*contact-us*/
-.contact-us{
-  margin-top: 80px;
-}
-.ritmo {
-  text-decoration: underline;
-}
-.titulo-contact{
-  color: white;
-  text-align: center;
-  margin-top: 125px;
-}
-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-label {
-  display: block;
-  margin-bottom: 10px;
-  color: white;
-}
-input, textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-}
-textarea {
-  height: 100px;
-}
-
-
-
-
-hr{
-  color: white;
+/*? MAIN INDEX*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
   display: flex;
+  }
+
+.left-section,
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
-.content-about {
-  flex: 2; 
-  padding: 20px;
-  border: solid white 1px;
-  border-radius: 2%;
-  margin-right: 20px;
+#title-index {
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: 300;
+}
 
+#subTitle-index {
+  font-size: 25px;
+  font-weight: 300;
+  color: white;
+}
+
+#ph-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: url('IMG\ RITMO/.about');
+  background-size: cover;
+  background-position: center;
+}
+
+#boat-info {
+  font-size: 20px;
+  font-weight: 350;
+}
+
+.description {
+  font-weight: 300;
+  margin: 10px 0;
+  background-color: #393939;
+  border-radius: 2%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.description {
+  margin: 10px 0;
+  background-color: #393939;
+  border-radius: 2%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 40px;
+  }
+  
+
+.link {
+  padding: 20px 40px;
+  background-color: #393939;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  transition: all 1s ease;
+  font-weight: 300;
+}
+
+.link:hover {
+  background-color: #393939;
+  border: white solid 1px;
+  transition: all 1s ease;
+  border-radius: 2%;
+}
+
+.text {
+  text-align: center;
+  color: white;
+}
+
+.text h2 {
+  margin-top: 0; 
+  color: white;
+  }
+
+#gastronomy-title {
+  margin-top: 0;
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#gastronomy-description {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.gastronomia{
+  width: 400px; 
+  object-fit: cover;
+  margin-left: auto; 
+  }
+
+.gastronomia-ph {
+  width: 400px;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+
+.content {
+  padding: 20px;
+  margin-top: 70px;
+}
+
+.first-img {
+  width: 750px;
+}
+
+.content h2 {
+  font-weight: 300;
+  color: white;
+}
+
+.content {
+  position: relative;
+  padding-right: 20px; 
+  flex: 1; 
+}
+
+#ph-index {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto\9;
 }
 
 .image {
   flex: 1; 
-  text-align: center; 
+  }
+
+  .image {
+      flex: 1; 
+      text-align: center; 
+      }
+
+      .image img {
+          max-width: 100%;
+          max-height: 100%;
+          height: auto;
+          width: auto\9; 
+          }
+
+          .imagen {
+              width: 100%;
+              display: block;
+              opacity: 1;
+              }
+
+.animated-img {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-.image img {
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-  width: auto\9; 
+.animated-img.show {
+  opacity: 1;
+}
+#container-about-boat{
+  margin-top: 50px;
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  justify-content: center; 
 }
 
-#about-us{
- background-color: #2a2a2ad7;
+#content-about-boat {
+  max-width: 1000px; 
+  width: 100%; 
+  position: relative;
 }
 
-#about-titulo{
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: white;
-  font-family: 'Montserrat', sans-serif; 
+  }
+  
+  .overlay h5 {
+  margin: 0;
+  background-color: #393939;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 2%;
+  }
+
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-auto-rows: minmax(100px, auto); 
+    grid-gap: 5px;
+    margin-left: 10px;
+    margin-right: 10px; 
+  }
+
+  .foto {
+    width: 100%;
+  }
+  
+  .foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+  }
+  
+  .foto :hover{
+    filter: none;
+    transition: all 0.50s;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .animated-img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  
+  .animated-img.show {
+    opacity: 1;
+  }
+
+  #text-family{
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  #family-title{
+    margin-left: 20px;
+  }
+
+
+/*? FIN MAIN INDEX*/
+
+/*------------*/
+
+/*? MAIN BOAT INFORMATION*/
+#about-us{
+  background-color: #292929;
 }
 
-.carousel slide{
-  padding-top: 30px;
-  margin-top: 40px;
+.titulo-contact {
+  color: white;
+  text-align: center;
+  margin-top: 125px;
   
 }
 
-#carouselExample{
+.content-about {
+  flex: 2;
+  padding: 20px;
+  border: solid white 1px;
+  border-radius: 2%;
+  height: 100%;
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#img-about img{
+  width: 425px;
+  margin-bottom: 20px;
+}
+
+#about-titulo {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+}
+#about-description{
+  color: white;
+  font-size: 17px;
+}
+
+.carousel slide {
+  padding-top: 30px;
+  margin-top: 40px;
+
+}
+
+#carouselExample {
   margin-top: 25px;
 }
 
 .info-container {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto;
-  gap: 10px;
-  text-align: center;
+  grid-template-columns: auto 1fr; 
+  gap: 20px; 
+  align-items: center; 
 }
-
-#info-title {
-  grid-column: 1 / -1;
-  margin-top: 40px;
-  font-family: 'Montserrat', sans-serif;
+.info-container h3{
+  font-size: 40px;
+  font-family: "Work Sans", sans-serif;
   color: white;
 }
 
+.info-container p{
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+}
+
+#info-title {
+  grid-column: 2;
+  justify-self: center; 
+  margin: 0; 
+  margin-top: 20px;
+}
+
 #info-ph {
-  grid-row: 2 / 3;
-  margin-left: 40px;
+  width: 400px; 
+  height: auto; 
+  grid-row: span 2;
+  margin-left: 20px 
 }
 
 #info-description {
-  grid-row: 2 / 3;
-  font-family: 'Montserrat', sans-serif;
-  margin-right: 40px;
-  margin-left: 40px;
-
+  grid-column: 2; 
+  margin: 0; 
+  margin-right: 20px;
 }
+
 
 @media (max-width: 768px) {
   .info-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-  }
-
-  #info-title {
-    grid-column: 1 / -1;
-  }
-
-  #info-ph {
-    grid-row: 2 / 3;
-  }
-
-  #info-description {
-    grid-row: 3 / 4;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
   }
 }
 
-#ph-container {
-  position: relative; 
-  overflow: hidden;
-}
-#ph-index{
+/*? FIN MAIN BOAT INFORMATION*/
+
+/*------------*/
+
+/*? MAIN CONTACT*/
+.titulo-contact{
+  color: white;
+  text-align: center;
+  margin-top: 125px;
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 30px;
+  }
+  form {
+  max-width: 400px;
+  margin: 0 auto;
+  }
+  label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+  }
+  input, textarea {
   width: 100%;
-  margin-top: 100px;
-}
-
-#title-index{
+  padding: 8px;
   margin-bottom: 20px;
-  font-size: 35px;
-}
+  box-sizing: border-box;
+  }
+  textarea {
+  height: 100px;
+  }
 
-#subTitle-index{
-  font-size: 20px;
-}
-#boat-info{
-  font-size: 20px;
-}
+  .contact-us{
+      margin-top: 80px;
+      }
+/*? FIN MAIN CONTACT*/
 
-/*granadindes*/
+/*------------*/
 
+/*? MAIN GRANADINES*/
 .contenedor-imagen {
   position: relative;
-}
+  }
 
-.imagen {
-  width: 100%;
-  display: block;
-  opacity: 1;
-}
+  .contenedor-imagen::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      }
 
+      
 .contenido {
   position: absolute;
   bottom: 0;
@@ -435,63 +601,28 @@ hr{
   padding: 20px;
   font-family: 'Montserrat', sans-serif;
   background-color: #2a2a2a98;
-}
-
-
-.contenido h1{
+  }
+  
+  
+  .contenido h1{
   color: white;
-}
-
-.contenido h1,
-.contenido p,
-.contenido a {
+  }
+  
+  .contenido h1,
+  .contenido p,
+  .contenido a {
   margin: 0;
   margin-top: 15px;
-}
-.contenido p{
+  }
+  .contenido p{
   padding-right: 30px;
-}
+  }
 
-.link {
-  padding: 20px 40px;
-  background-color: #6e7074;
+/*?FIN MAIN GRANADINES*/
+
+/*otros*/
+h2, h4 {
+  margin: 0;
   color: white;
-  border-radius: 50%;
-  text-decoration: none; 
-  display: inline-block; 
-  position: relative; 
-  z-index: 2; 
-  transition: all 1s ease; 
-}
-
-.link:hover {
-  background-color: #6e7074ea;
-  border: white solid 1px;
-  transition: all 1s ease;
-  border-radius: 2%;
-} 
-
-.contenedor-imagen::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  font-family: "Work Sans", sans-serif;
+  }  

@@ -1,14 +1,12 @@
-window.addEventListener('scroll', function() {
-    var header = document.getElementById('header');
-    var scrollPosition = window.scrollY;
-  
-    if (scrollPosition > 0) {
-      header.classList.remove('opaque');
-    } else {
-      header.classList.add('opaque');
-    }
-  });
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("header").style.backgroundColor = "#292929"; 
+  } else {
+    document.getElementById("header").style.backgroundColor = "white"; 
+  }
+}
   document.addEventListener("DOMContentLoaded", function() {
     const animatedImages = document.querySelectorAll('.animated-img');
   
