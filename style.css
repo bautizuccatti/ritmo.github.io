@@ -352,6 +352,8 @@ footer {
 }
 
 
+
+
 .content {
   padding: 20px;
   margin-top: 70px;
@@ -410,14 +412,7 @@ footer {
               opacity: 1;
               }
 
-.animated-img {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
 
-.animated-img.show {
-  opacity: 1;
-}
 #container-about-boat{
   margin-top: 50px;
   width: 100%;
@@ -480,15 +475,6 @@ footer {
     align-items: center;
   }
 
-  .animated-img {
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-  }
-  
-  
-  .animated-img.show {
-    opacity: 1;
-  }
 
   #text-family{
     color: white;
@@ -512,6 +498,31 @@ footer {
   #index-title.show {
     left: 0; 
   }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  #ph-container {
+    animation: slideIn 1s ease forwards;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+
+  #animation-gastronomy {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+
 
 
 /*? FIN MAIN INDEX*/
