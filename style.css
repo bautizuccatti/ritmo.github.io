@@ -82,7 +82,7 @@ img {
   border: solid transparent 1px;
   padding: 3px;
   border-radius: 2px;
-  font-family: WorkSans-Regular, Arial, sans-serif;
+  font-family: WorkSans-Light, Arial, sans-serif;
   font-size: 18px;
   font-weight: 350;
 }
@@ -106,12 +106,24 @@ img {
 
 /*! FOOTER*/
 #links-footer {
-  flex-grow: 1;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.logo {
+  margin-right: 20px; 
+}
+#links-footer {
   text-align: center;
 }
 
 #links-footer a {
-  display: inline-block;
   color: #6E7074;
   margin: 0 10px;
   text-decoration: none;
@@ -135,40 +147,20 @@ img {
 footer {
   border-top: white solid 1px;
   margin-top: 25px;
-  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 60px;
   color: white;
 }
 
-.footer-container {
-  display: flex;
-  align-items: center;
-}
 
 .logo img {
-  width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-.additional-info {
-  margin-left: auto;
-}
-
-.additional-info h4 {
-  margin-bottom: 10px;
-}
-
-.additional-info a {
-  display: block;
-  margin-bottom: 10px;
-  text-decoration: none;
-  color: white;
-  font-family: WorkSans-Regular, Arial, sans-serif;
-}
-
 
 footer {
   border-top: white solid 1px;
   margin-top: 25px;
-  padding: 20px;
   color: white;
   background-color: #292929;
 }
@@ -179,23 +171,9 @@ footer {
 }
 
 .logo img {
-  width: 100px; 
+  width: 150px; 
 }
 
-
-.additional-info {
-  margin-left: auto; 
-}
-
-.additional-info h4 {
-  margin-bottom: 10px;
-}
-.additional-info a {
-  display: block;
-  margin-bottom: 10px; 
-  text-decoration: none;
-  color: white;
-}
 /*! FIN FOOTER*/
 
 /*------------*/
@@ -882,4 +860,21 @@ h2, h4 {
   margin: 0;
   color: white;
   font-family: "Work Sans", sans-serif;
-  }  
+  } 
+
+  .me-container{
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .me-container a{
+    color: white;
+    font-size: 15px;
+    font-family: WorkSans-ExtraLight, Arial, sans-serif;
+    text-decoration: none;
+    font-style: italic;
+  }
+
+ 
