@@ -1,15 +1,15 @@
 $(document).ready(function() {
-    // Selecciona todos los enlaces del navbar que apunten a secciones internas de la misma página
-    $('a[href^="#"]').on('click', function(event) {
+    // Selecciona el enlace del navbar con el texto "charters"
+    $('a[href="index.html#charter-scroll"]').on('click', function(event) {
         // Evita el comportamiento predeterminado del enlace
         event.preventDefault();
 
-        // Obtiene el atributo href del enlace clicado
-        var target = $(this).attr('href');
+        // Obtiene el ID del elemento al que quieres desplazarte
+        var target = "#charter-scroll";
 
-        // Desplazamiento suave a la sección objetivo
+        // Desplazamiento suave al elemento objetivo
         $('html, body').animate({
             scrollTop: $(target).offset().top
         }, 1000); // Duración de la animación en milisegundos
     });
-});
+});f

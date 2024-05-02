@@ -1,3 +1,7 @@
+window.addEventListener('load', function() {
+  document.getElementById('ph-container').classList.remove('hidden');
+});
+
 document.addEventListener("DOMContentLoaded", function(event) {
   var contentDiv = document.getElementById("index-title");
   if (contentDiv) {
