@@ -41,25 +41,17 @@
 body {
   margin: 0;
   padding: 0%;
-  background-color: #292929;
+  background-color: #ffffff;
   overflow-x: hidden;
-}
-
-img {
-  border-radius: 1%;
 }
 
 /*! HEADER*/
 #header {
-  border-bottom: white 1px solid;
-  background-color: #292929;
-  position: fixed;
+  background-color: white;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
-  z-index: 1000;
-  transition: background-color 0.5s ease;
 }
 
 #container-header {
@@ -73,63 +65,33 @@ img {
   height: 60px;
 }
 
-#links-header a {
-  position: relative;
-  display: inline-block;
-  padding: 15px 30px;
-  border: 1px solid #fefefe;
-  text-transform: uppercase;
-  color: #fefefe;
+.links-header {
+  margin-right: 30px;
+}
+
+.links-header a {
+  color: black;
   text-decoration: none;
   font-size: 16px;
   font-family: WorkSans-Regular, Arial, sans-serif;
+  margin-left: 30px;
+  position: relative; 
 }
 
-#links-header a::before{
+.links-header a::after {
   content: '';
   position: absolute;
-  top: 6px;
-  left: -2px;
-  width: calc(100% + 4px);
-  height: calc(100% - 12px);
-  background-color: #292929;
-  transition: 0.3s ease-in-out;
-  transform: scaleY(1);
+  bottom: -2px; 
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 0.3s; 
 }
 
-#links-header a:hover::before{
-  transform: scaleY(0);
+.links-header a:hover::after {
+  width: 100%; 
 }
-
-#links-header a::after {
-  content: '';
-  position: absolute;
-  left: 6px;
-  top: -2px;
-  height: calc(100% + 4px);
-  width: calc(100% - 12px);
-  background-color: #292929;
-  transition: 0.3s ease-in-out;
-  transform: scaleX(1);
-  transition-delay: 0.5s;
-}
-
-#links-header a:hover::after {
-  transform: scaleX(0);
-}
-
-#links-header span {
-  position: relative;
-  z-index: 3;
-}
-
-#links-header button {
-  background-color: none;
-  text-decoration: none;
-  background-color: #292929;
-  border: none;
-}
-
 
 .container-header {
   display: flex;
@@ -140,849 +102,236 @@ img {
 
 /*! FIN HEADER*/
 
-/*! FOOTER*/
-#links-footer {
+/*? INDEX - MAIN */
+.ph-container {
   text-align: center;
 }
-.footer-container {
-  display: flex;
-  align-items: center;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-.logo {
-  margin-right: 20px; 
+
+.image-container {
+  position: relative;
+  display: inline-block;
 }
 
-footer {
-  border-top: white solid 1px;
-  margin-top: 25px;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  color: white;
-}
-
-
-.logo img {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-footer {
-  border-top: white solid 1px;
-  margin-top: 25px;
-  color: white;
-  background-color: #292929;
-}
-
-.footer-container {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 150px; 
-}
-
-/*! FIN FOOTER*/
-
-/*------------*/
-
-/*? MAIN INDEX*/
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container {
-  display: flex;
-  }
-
-.left-section,
-.right-section {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  margin-bottom: 100px;
-  margin-top: 40px;
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 #title-index {
-  margin-bottom: 20px;
-  font-size: 35px;
-  font-weight: 100;
-  font-family: WorkSans-Medium, Arial, sans-serif;
-}
-
-#subTitle-index {
-  font-size: 25px;
-  font-weight: 200;
-  color: white;
-  font-family: WorkSans-Regular, Arial, sans-serif;
-}
-
-#ph-container {
-  position: relative;
-  overflow: hidden;
-  margin-right: 20px;
-}
-
-.about {
-  height: 100vh;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  background-image: url('IMG\ RITMO/.about');
-  background-size: cover;
-  background-position: center;
-}
-
-#boat-info {
-  font-size: 20px;
-  font-weight: 350;
-  background-color: #39393996;
-  font-family: WorkSans-Regular, Arial, sans-serif;
-}
-
-.description {
-  font-weight: 300;
-  margin: 10px 0;
-  background-color: #39393996;
-  border-radius: 2%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
-  margin-bottom: 40px;
-  font-family: WorkSans-Light, Arial, sans-serif;
-}
-
-.description {
-  margin: 10px 0;
-  background-color: #39393996;
-  border-radius: 2%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
-  margin-bottom: 40px;
-  }
-  
-
-.link {
-  padding: 20px 40px;
-  background-color: #39393996;
-  color: white;
-  border-radius: 50%;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-  transition: all 1s ease;
-  font-weight: 300;
-  font-family: WorkSans-Medium, Arial, sans-serif;
-}
-
-.link:hover {
-  background-color: #39393996;
-  border: white solid 1px;
-  transition: all 1s ease;
-  border-radius: 2%;
-}
-
-.text {
-  text-align: center;
-  color: white;
-}
-
-.text h2 {
-  margin-top: 0; 
-  color: white;
-  }
-
-#gastronomy-title {
-  margin-top: 0;
-  color: white;
-  font-size: 30px;
-  font-weight: 300;
-  text-align: left;
-  padding-left: 20px;
-  
-}
-
-#gastronomy-description {
-  margin-right: 20px;
-  margin-left: 20px;
-  text-align: left;
-  font-size: 20px;
-  font-weight: 300;
-}
-.definitive-title{
-  font-family: WorkSans-Medium, Arial, sans-serif;
-  font-size: 50px;
-}
-.definitive-sub-title{
-  font-family: WorkSans-Light, Arial, sans-serif;
-}
-#welcome-text{
-  font-family: WorkSans-Regular, Arial, sans-serif;
-  font-size: 21px;
-}
-
-.gastronomia{
-  width: 400px; 
-  object-fit: cover;
-  margin-left: auto; 
-  }
-
-.gastronomia-ph {
-  width: 400px;
-  object-fit: cover;
-  margin-left: auto;
-}
-
-
-
-
-.content {
-  padding: 20px;
-  margin-top: 70px;
-  margin-right: 20px;
-}
-
-.first-img {
-  width: 750px;
-}
-
-.content h2 {
-  font-weight: 300;
-  color: white;
-}
-
-.content {
-  position: relative;
-  padding-right: 20px; 
-  flex: 1; 
-}
-
-#ph-index {
-  width: 100%;
-  margin-top: 100px;
-  
-}
-
-.image {
-  flex: 1;
-  text-align: center;
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-  width: auto\9;
-}
-
-.image {
-  flex: 1; 
-  }
-
-  .image {
-      flex: 1; 
-      text-align: center; 
-      }
-
-      .image img {
-          max-width: 100%;
-          max-height: 100%;
-          height: auto;
-          width: auto\9; 
-          }
-
-          .imagen {
-              width: 100%;
-              display: block;
-              opacity: 1;
-              }
-
-
-#container-about-boat{
-  margin-top: 50px;
-  width: 100%;
-  height: 100%; 
-  display: flex;
-  justify-content: center; 
-}
-
-#content-about-boat {
-  max-width: 1000px; 
-  width: 100%; 
-  position: relative;
-}
-
-.overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  }
-  
-  .overlay h5 {
-  margin: 0;
-  background-color: #393939;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 2%;
-  }
-
-  .foto-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.foto {
-    flex: 1;
-    margin: 0 10px; 
-}
-
-.foto img {
-    max-width: 100%; 
-    height: auto;
-    filter: grayscale(1);
-}
-  
-.foto :hover{
-  transition: all 0.5s;
-  filter: none;
-}
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-
-  #text-family{
-    color: white;
-    margin-right: 20px;
-    margin-left: 20px;
-    text-align: left;
-    font-size: 20px;
-  }
-
-  #family-title{
-    margin-left: 20px;
-    font-size: 30px;
-  }
-
-  #index-title {
-    position: relative;
-    left: -1000px; 
-    transition: left 1s ease; 
-  }
-  
-  #index-title.show {
-    left: 0; 
-  }
-
-  @keyframes slideIn {
-    from {
-      transform: translateY(100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-  
-  #ph-container {
-    animation: slideIn 1s ease forwards;
-  }
-  
-  .hidden {
-    opacity: 0;
-  }
-
-  #animation-gastronomy {
-    position: relative;
-    width: 100%;
-    height: auto;
-
+  width: 650px;
 }
 
 
-
-/*? FIN MAIN INDEX*/
-
-/*------------*/
-
-/*? MAIN BOAT INFORMATION*/
-#about-us{
-  background-color: #292929;
-}
-
-.titulo-contact {
-  color: white;
-  text-align: center;
-  margin-top: 125px;
-  font-family: WorkSans-Medium, Arial, sans-serif;
-}
-
-
-.content-about {
-  flex: 2;
-  padding: 20px;
-  border: solid white 1px;
-  border-radius: 2%;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-#img-about img{
-  width: 500px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-}
-#about-titulo {
-  color: white;
-  font-family: WorkSans-Medium, Arial, sans-serif;
-  margin-bottom: 10px;
-  font-size: 25px;
-}
-#about-description{
-  color: white;
-  font-size: 17px;
-  font-family: WorkSans-Light, Arial, sans-serif;
-}
-
-.carousel slide {
-  padding-top: 30px;
-  margin-top: 40px;
-
-}
-
-#carouselExample {
-  margin-top: 25px;
-}
-
-
-.info-container h3{
-  font-size: 40px;
-  font-family: WorkSans-Medium, Arial, sans-serif;
-  color: white;
-}
-
-
-.info-container {
+.set-container {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.set-container h2,h3{
+  font-family: WorkSans-Regular, Arial, sans-serif;
+  font-size: 25px;
+}
+
+.set-container h2{
+  color: rgb(110, 110, 110);
+}
+
+.set-container h3{
+  color: gray;
+  margin-top: 0px;
 }
 
 .about-container {
   display: flex;
   align-items: center; 
+  margin-top: 100px;
 }
 
-#info-title {
-  margin-top: 40px;
-}
-
-.list-container {
-  display: flex;
-  padding: 70px;
-}
-
-.info-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.info-list li {
-  margin-bottom: 20px;
-  padding: 0 20px; 
-}
-
-.title-li{
-  color: white;
-  font-family: WorkSans-Medium, Arial, sans-serif;
-  font-size: 20px;
-}
-
-.li{
-  color: white;
-  font-family: WorkSans-Light, Arial, sans-serif;
-  list-style-type: circle;
-}
-
-
-
-@media (max-width: 768px) {
-  .info-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto auto;
-  }
-}
-
-
-.crew-container {
-  text-align: center;
-  border-top: solid white 2px;
-  margin-top: 20px;
-}
-
-.info-title {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  color: white;
-  font-family: WorkSans-Medium, Arial, sans-serif;
-}
-
-.crew-info {
-  display: flex;
-}
-
-.crew-image img{
-  width: 400px;
-}
-
-.crew-image {
+.image-container-tow {
   flex: 0 0 auto;
-  margin-left: 20px; 
+  margin-right: 50px;
 }
 
-.crew-description {
-  flex: 1;
-  text-align: left;
-  color: white;
-  font-size: 17px;
-  font-family: WorkSans-Light, Arial, sans-serif;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-/*? FIN MAIN BOAT INFORMATION*/
-
-/*------------*/
-
-/*? MAIN CONTACT*/
-
-  #contact-us-container{
-    margin-top: 120px;
-  }
-
-  .p-contact{
-    color: white;
-    font-family: WorkSans-Light, Arial, sans-serif;
-    margin-left: 150px;
-    font-size: 20px;
-  }
-  #p-contact-description{
-    margin-right: 25%;
-  }
-
-  #contact-title{
-    color: white;
-    font-family: WorkSans-Medium, Arial, sans-serif;
-    margin-left: 150px;
-  }
-
- #email-container{
-  margin-left: 150px;
-  margin-top: 40px;
- }
-
- #email-container img{
-  width: 30px;
- }
-
- #email-container p{
-  font-family: WorkSans-Light, Arial, sans-serif;
-  font-size: 17px;
-  color: white;
-  margin-top: 2px
- }
-
- #email-container a{
-  font-family: WorkSans-Light, Arial, sans-serif;
-  color: rgb(0, 94, 255);
-  font-size: 17px;
-  font-style: italic;
- }
-
-
- #phone-container{
-  margin-left: 150px;
-  margin-top: 40px;
- }
-
- #phone-container img{
-  width: 30px;
- }
-
- #phone-container p{
-  font-family: WorkSans-Light, Arial, sans-serif;
-  font-size: 17px;
-  color: white;
-  margin-top: 2px
- }
- 
- #phone-container a{
-  font-family: WorkSans-Light, Arial, sans-serif;
-  color: rgb(0, 94, 255);
-  font-size: 17px;
-  font-style: italic;
- }
-
- .contact-form-container {
-  display: flex;
-  align-items: flex-start; 
+.image-container-tow img{
+  width: 550px;
 }
 
-.contact-container, .form-container {
+.text-container {
   flex: 1; 
+}
+
+.text-container h4,
+.text-container p,
+.text-container a {
+  text-align: start;
+}
+
+.text-container h4{
+  color: rgb(110, 110, 110);
+  font-family: WorkSans-Regular, Arial, sans-serif;
+  font-size: 25px;
+}
+
+.text-container p{
+  color: gray;
+  font-size: 20px;
+  font-family: WorkSans-Light, Arial, sans-serif; 
   margin-bottom: 40px;
 }
 
-  .divider {
-    width: 1px; 
-    height: 100%; 
-    background-color: white; 
-    margin: 0 20px; 
-  }
-
- 
-
-.label {
-  color: white;
-  font-family: WorkSans-Light, Arial, sans-serif;
-  display: block; 
-  font-size: 1.2em;
-  background-color: transparent; 
-  border: none; 
-  margin-bottom: 10px; 
-  padding: 5px; 
+.text-container a{
+  color: gray;
+  font-family: WorkSans-ExtraLight, Arial, sans-serif;
+  border: solid 1px grey;
+  text-decoration: none;
+  padding: 7px 20px;
 }
 
-/* Estilos para los input y select */
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="date"],
-input[type="tel"],
-textarea,
-select {
-  width: 65%;
-  padding: 12px; /* Espacio interno */
-  margin-bottom: 10px; /* Espacio inferior */
-  font-size: 17px; 
-  font-family: WorkSans-Light, Arial, sans-serif;
-  font-style: italic;
-  border: 2px solid white; /* Borde */
-  border-radius: 0px; /* Borde redondeado */
-  background-color: transparent;
-  color: white;
-}
-
-
-/* Estilos específicos para los select */
-select {
-  width: 65%;
-  padding: 12px; /* Espacio interno */
-  margin-bottom: 10px; /* Espacio inferior */
-  font-size: 17px; 
-  font-family: WorkSans-Light, Arial, sans-serif;
-  font-style: italic;
-  border: 2px solid white; /* Borde */
-  border-radius: 0px; /* Borde redondeado */
-  background-color: transparent;
-  color: white;
-}
-
-.option{
-  width: 65%;
-  padding: 12px; /* Espacio interno */
-  margin-bottom: 10px; /* Espacio inferior */
-  font-size: 17px; 
-  font-family: WorkSans-Light, Arial, sans-serif;
-  font-style: italic;
-  border: 2px solid white; /* Borde */
-  border-radius: 0px; /* Borde redondeado */
-  background-color: transparent;
-}
-
-
-#send{
-  width: 50%;
-  text-align: center;
-}
-/*? FIN MAIN CONTACT*/
-
-/*------------*/
-
-/*? MAIN GRANADINES*/
-  .top-container{
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-  }
-
-  .top-container h2{
-    font-family: WorkSans-ExtraLight, Arial, sans-serif;
-    margin-left: 40px;
-  }
-
-  .top-container p{
-    text-align: left;
-    color: white;
-    font-family: WorkSans-Light, Arial, sans-serif;
-    margin-left: 40px;
-    font-size: 18px;
-  }
-
-  #live{
-    font-size: 20px;
-  }
-
-  .text-container {
-    flex: 1;
-}
-
-.image-container {
-    flex: 1;
-    text-align: right;
-    margin-right: 40px; 
-}
-
-.top-container a{
-  margin-left: 25%;
+.gastronomy-container img{
+  width: 100%;
+  height: 100%;
   margin-top: 15px;
 }
 
-.container-granadines {
+.contenedor-gastronomy-text {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px; /* Ancho máximo del contenedor */
-  margin-top: 40px;
+  max-width: 900px; 
+  margin: 0 auto;  
+  margin-top: 70px;
   margin-bottom: 70px;
 }
 
-.content-granadines {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.icon-container {
-  display: flex;
-  flex-direction: column;
-}
-.icon-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px; /* Espacio entre los iconos */
+.texto-izquierdo, .texto-derecho {
+  flex: 1; 
+  margin: 0 40px; 
 }
 
-.icon-item img {
-  width: 30px; /* Tamaño de los iconos */
-  margin-right: 10px; /* Espacio entre el icono y el texto */
+.texto-izquierdo {
+  color: gray;
+  font-size: 20px;
+  font-family: WorkSans-Regular, Arial, sans-serif;
+  line-height: 1.7; /* Ajusta este valor según sea necesario */
 }
 
-
-.image-granadines {
-  width: 300px; /* Ancho de la imagen */
-  margin-right: 20px; /* Espacio entre la imagen y el texto */
+.texto-derecho {
+  color: gray;
+  font-size: 20px;
+  font-family: WorkSans-Regular, Arial, sans-serif;
+  line-height: 1.7; /* Ajusta este valor según sea necesario */
 }
 
-.image-granadines img {
-  width: 100%; /* Ajuste de tamaño de la imagen */
-  height: auto; /* Mantener la relación de aspecto */
+.texto-derecho p{
+  color:rgb(110, 110, 110) ;
+  font-family: WorkSans-Bold, Arial, sans-serif;
 }
 
-.text {
-  flex: 1;
-  font-family: WorkSans-Light, Arial, sans-serif
+.platos-gastronomy img{
+  width: 100%;
+  height: 100%;
 }
 
-.grid-container {
-  display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+.end-index img{
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
 }
 
-.grid-container img{
-  width: 35px;
-  margin-right: 10px;
+.end-index {
+  position: relative;
+  display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
 }
 
-.grid-container div {
-  display: flex;
-  align-items: center;
-  
+.end-overlay {
+  position: absolute;
+  top: 50%;
+  left: 5%; /* Ajusta la distancia desde el borde izquierdo */
+  transform: translateY(-50%);
+  color: white; /* Color del texto */
 }
 
-.grid-container p {
-  text-align: center;
-  font-family: WorkSans-Light, Arial, sans-serif
+.end-overlay h1,
+.end-overlay h2,
+.end-overlay a {
+  margin: 0; /* Elimina los márgenes predeterminados */
+ /* Ajusta el espacio entre los elementos */
 }
 
-.grid-item h5 {
-  margin-top: 0; /* Elimina el margen superior predeterminado del h5 */
-  margin-bottom: 5px; /* Ajusta el margen inferior del h5 */
+.end-overlay h1{
+  font-family: WorkSans-Thin, Arial, sans-serif;
+  font-size: 70px;
+  letter-spacing: 5px
 }
 
-.grid-item {
-  text-align: center;
+.end-overlay h2{
+  font-family: WorkSans-Thin, Arial, sans-serif;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
 }
 
-.text a {
-  display: block;
-  text-align: center;
-  margin-top: 20px; /* Espacio entre el contenido y el enlace */
-}
-
-.text h3{
-  font-family: WorkSans-ExtraLight, Arial, sans-serif;
-  font-size: 30px;
-}
-
-.text p{
-  text-align: left;
-}
-
-
- 
-/*?FIN MAIN GRANADINES*/
-
-/*otros*/
-h2, h4 {
-  margin: 0;
+.end-overlay a{
   color: white;
-  font-family: "Work Sans", sans-serif;
-  } 
+  font-family: WorkSans-Thin, Arial, sans-serif;
+  font-weight: 700;
+  border: solid 2px white;
+  text-decoration: none;
+  padding: 7px 20px;
+  font-size: 25px;
+}
+/*? FIN INDEX - MAIN */
 
-  .me-container{
-    border-top: 1px solid white;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 100px;
+}
 
-  .me-container a{
-    color: white;
-    font-size: 15px;
-    font-family: WorkSans-ExtraLight, Arial, sans-serif;
-    text-decoration: none;
-    font-style: italic;
-  }
+.footer img {
+  width: 100px;
+}
 
-  
-  
+.footer .footer-center {
+  display: flex;
+}
 
+.footer .footer-center a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: WorkSans-Regular, Arial, sans-serif;
+  margin-left: 30px;
+  position: relative; /* Agrega posición relativa para el subrayado */
+}
+
+.footer .footer-center a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Posiciona el subrayado debajo del texto */
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 0.3s; /* Añade una transición suave al ancho */
+}
+
+.footer .footer-center a:hover::after {
+  width: 100%; /* Ancho completo al pasar el mouse */
+}
+
+.footer .footer-right p {
+  margin-left: auto;
+  font-family: WorkSans-Light, Arial, sans-serif;
+  letter-spacing: 3px;
+}
