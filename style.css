@@ -45,6 +45,41 @@ body {
   overflow-x: hidden;
 }
 
+/*loader*/
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid gray;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/*fin loader*/
+
 /*! HEADER*/
 #header {
   background-color: white;
@@ -99,8 +134,59 @@ body {
   align-items: center;
   padding: 10px 20px;
 }
-
 /*! FIN HEADER*/
+
+/*-------*/
+
+/*!FOOTER*/
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  padding: 100px;
+}
+
+.footer img {
+  width: 100px;
+}
+
+.footer .footer-center {
+  display: flex;
+}
+
+.footer .footer-center a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: WorkSans-Regular, Arial, sans-serif;
+  margin-left: 30px;
+  position: relative; 
+}
+
+.footer .footer-center a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 0.3s;
+}
+
+.footer .footer-center a:hover::after {
+  width: 100%; 
+}
+
+.footer .footer-right p {
+  margin-left: auto;
+  font-family: WorkSans-Light, Arial, sans-serif;
+  letter-spacing: 3px;
+}
+/*!FIN FOOTER*/
+
+/*-------*/
 
 /*? INDEX - MAIN */
 .ph-container {
@@ -220,14 +306,14 @@ body {
   color: gray;
   font-size: 20px;
   font-family: WorkSans-Regular, Arial, sans-serif;
-  line-height: 1.7; /* Ajusta este valor según sea necesario */
+  line-height: 1.7; 
 }
 
 .texto-derecho {
   color: gray;
   font-size: 20px;
   font-family: WorkSans-Regular, Arial, sans-serif;
-  line-height: 1.7; /* Ajusta este valor según sea necesario */
+  line-height: 1.7;
 }
 
 .texto-derecho p{
@@ -248,22 +334,22 @@ body {
 
 .end-index {
   position: relative;
-  display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
+  display: inline-block; 
 }
 
 .end-overlay {
   position: absolute;
   top: 50%;
-  left: 5%; /* Ajusta la distancia desde el borde izquierdo */
+  left: 5%; 
   transform: translateY(-50%);
-  color: white; /* Color del texto */
+  color: white; 
 }
 
 .end-overlay h1,
 .end-overlay h2,
 .end-overlay a {
-  margin: 0; /* Elimina los márgenes predeterminados */
- /* Ajusta el espacio entre los elementos */
+  margin: 0; 
+ 
 }
 
 .end-overlay h1{
@@ -290,48 +376,13 @@ body {
 }
 /*? FIN INDEX - MAIN */
 
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f0f0f0;
-  padding: 100px;
-}
+/*-------*/
 
-.footer img {
-  width: 100px;
-}
 
-.footer .footer-center {
-  display: flex;
-}
+/*? CONTACT US - MAIN */
 
-.footer .footer-center a {
-  color: black;
-  text-decoration: none;
-  font-size: 16px;
-  font-family: WorkSans-Regular, Arial, sans-serif;
-  margin-left: 30px;
-  position: relative; /* Agrega posición relativa para el subrayado */
-}
 
-.footer .footer-center a::after {
-  content: '';
-  position: absolute;
-  bottom: -2px; /* Posiciona el subrayado debajo del texto */
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: black;
-  transition: width 0.3s; /* Añade una transición suave al ancho */
-}
 
-.footer .footer-center a:hover::after {
-  width: 100%; /* Ancho completo al pasar el mouse */
-}
 
-.footer .footer-right p {
-  margin-left: auto;
-  font-family: WorkSans-Light, Arial, sans-serif;
-  letter-spacing: 3px;
-}
+/*? FIN CONTACT US - MAIN */
+
