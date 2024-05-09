@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RITMO CATAMARAN - CONTACT US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+    <title>RITMO CATAMARAN</title>
     <link rel="shortcut icon" href="/IMG RITMO/logo-pestañaII.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css"> <!--?CSS-->
     <!--?FONTS-->
@@ -15,27 +15,145 @@
   <div id="loader">
     <img src="img/logo (1).png" alt="Logo" class="logo-loader">
 </div>
-    <div id="content" class="hidden">
-     <!--!HEADER-->
-     <header id="header" class="opaque">
-        <nav>
-          <div id="container-header">
-            <div>
-              <a href="index.html"><img src="img/logo (1).png" alt="Logo" id="logo-header"></a>
-            </div>
-            <div class="links-header">    
-                <a href="boat-info.html" id="header-links">BOAT INFORMATION</a> 
-                <a href="charters.html" id="header-links">CHARTERS</a> 
-                <a href="contact.html" id="header-links">CONTACT US</a> 
-            </div>
-            </div>
+<div id="content" class="hidden">
+    <!--!HEADER-->
+    <header id="header" class="opaque">
+      <nav>
+        <div id="container-header">
+          <div>
+            <a href="index.html"><img src="img/logo (1).png" alt="Logo" id="logo-header"></a>
           </div>
-        </nav>
-      </header>
-    <!--!FIN HEADER-->
+          <div class="links-header">    
+              <a href="boat-info.html" id="header-links">BOAT INFORMATION</a> 
+              <a href="charters.html" id="header-links">CHARTERS</a> 
+              <a href="contact.html" id="header-links">CONTACT US</a> 
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  <!--!FIN HEADER-->
 
+    <!--MAIN-->
+    <main id="contact">
+      <div id="contact-us-container">
+      <p class="p-contact">LIVE THE EXPERIENCE</p>
+      <h4 id="contact-title">CONTACT US</h4>
+      <p class="p-contact" id="p-contact-description">Fill out the form to receive detailed information about charter services in Ascension Catamaran. <br>
+        Or get quickly contact by clicking the links below.</p>
+      </div>
+
+      <div class="contact-form-container">
+      <div class="contact-container">
+      <div id="email-container">
+        <img src="img/email.png" alt="">
+        <p> EMAIL </p>
+        <a href="mailto:Ritmocatamaran@gmail.com">Ritmocatamaran@gmail.com</a>
+      </div>
+
+      <div id="phone-container">
+        <img src="img/phone.png" alt="">
+        <p> PHONE </p>
+        <a href="tel:+54 9 11 2345 6789">+54 9 11 2345 6789 (Argentina)</a>
+      </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="form-container">
+      <form action="/enviar-mensaje" method="post">
+        <label for="first-name" class="label">FIRST NAME</label>
+        <input type="text" id="first-name" name="first-name" required>
+      
+        <label for="last-name" class="label">LAST NAME</label>
+        <input type="text" id="last-name" name="last-name" required>
+      
+        <label for="email" class="label">EMAIL</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="number-of-guests" class="label">NUMBER OF GUESTS</label>
+<input type="number" id="number-of-guests" name="number-of-guests" min="0" max="6" required>
+<script>
+    const input = document.getElementById('number-of-guests');
+    input.addEventListener('input', function() {
+        if (this.value < 0) {
+            this.value = 0;
+        } else if (this.value > 6) {
+            this.value = 6;
+        }
+    });
+</script>
+      
+        <label for="date" class="label">DATE</label>
+        <input type="date" id="date" name="date" required>
+      
+        <label for="contact-number" class="label">CONTACT NUMBER</label>
+        <input type="tel" id="contact-number" name="contact-number" required>
+      
+        <label for="charter-type" class="label">TYPE OF CHARTER</label>
+        <select id="charter-type" name="charter-type" required>
+          <option value="private" class="option">Private Charter</option>
+          <option value="corporate" class="option">Corporate Charter</option>
+          <option value="wedding" class="option">Wedding Charter</option>
+          <option value="other" class="option">Other</option>
+        </select>
+      
+        <label for="message" class="label">MESSAGE (optional)</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br>
+        <a href="#" class="link" id="send">SEND</a>
+
+        
+        <div class="alert-container">
+            <div class="alert" id="alertBox">
+                <span class="closebtn" onclick="closeAlertBox()">&times;</span>
+                The RITMO team has already received your message, we will contact you soon, good winds!
+            </div>
+        </div>
+    
+        <script>
+            
+            function showAlertBox() {
+                document.querySelector('.alert-container').style.display = 'flex';
+            }
+    
+             // Función para cerrar el alert box
+        function closeAlertBox() {
+            
+            window.location.href = 'index.html';
+        }
+    
+            document.getElementById('send').addEventListener('click', function(event) {
+                event.preventDefault();
+                showAlertBox(); 
+            });
+        </script>
+      </form>
+      </div>
+    </div>
+    </main>
+    <!--FIN MAIN-->
+
+
+ <!--? FOOTER-->
+<footer class="footer">
+  <div class="footer-left">
+    <img src="img/logo-ritmo-removebg-preview.png" alt="Imagen de la izquierda">
+  </div>
+  <div class="footer-center">
+    <a href="#">BOAT INFORMATION</a>
+    <a href="#">CHARTERS</a>
+    <a href="#">CONTACT US</a>
+  </div>
+  <div class="footer-right">
+    <p>RITMO © 2024</p>
+  </div>
+</footer>
+
+<!--? FIN FOOTER-->
 
 </div>
 <script src="script.js"></script>
+<script src="send.js"></script>
 </body>
 </html>

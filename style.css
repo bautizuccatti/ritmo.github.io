@@ -38,6 +38,9 @@
 
 
 /*TODO - GENERAL*/
+/* *{
+  border: 2px solid red;
+} */
 body {
   margin: 0;
   padding: 0%;
@@ -149,7 +152,7 @@ body.loading {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f0f0f0;
+  background-color: white;
   padding: 100px;
 }
 
@@ -195,16 +198,16 @@ body.loading {
 /*-------*/
 
 /*? INDEX - MAIN */
-.ph-container {
+.ph-container-index {
   text-align: center;
 }
 
-.image-container {
+.image-container-index {
   position: relative;
   display: inline-block;
 }
 
-.image-container img {
+.image-container-index img {
   display: block;
   width: 100%;
   height: auto;
@@ -386,9 +389,346 @@ body.loading {
 
 
 /*? CONTACT US - MAIN */
+#contact{
+  background-color: white;
+}
+
+.p-contact{
+  color: gray;
+  font-family: WorkSans-Light, Arial, sans-serif;
+  margin-left: 150px;
+  font-size: 20px;
+
+}
+#p-contact-description{
+  margin-right: 25%;
+}
+
+#contact-title{
+  color: rgb(110, 110, 110);
+  font-family: WorkSans-Regular, Arial, sans-serif;
+  font-size: 25px;
+  margin-left: 150px;
+}
+
+#email-container{
+margin-left: 150px;
+margin-top: 40px;
+}
+
+#email-container img{
+width: 30px;
+}
+
+#email-container p{
+font-family: WorkSans-Light, Arial, sans-serif;
+font-size: 17px;
+color: gray;
+margin-top: 2px
+}
+
+#email-container a{
+font-family: WorkSans-Light, Arial, sans-serif;
+color: rgb(0, 94, 255);
+font-size: 17px;
+font-style: italic;
+}
 
 
+#phone-container{
+margin-left: 150px;
+margin-top: 40px;
+}
 
+#phone-container img{
+width: 30px;
+}
+
+#phone-container p{
+font-family: WorkSans-Light, Arial, sans-serif;
+font-size: 17px;
+color: gray;
+margin-top: 2px
+}
+
+#phone-container a{
+font-family: WorkSans-Light, Arial, sans-serif;
+color: rgb(0, 94, 255);
+font-size: 17px;
+font-style: italic;
+}
+
+.contact-form-container {
+display: flex;
+align-items: flex-start; 
+}
+
+.contact-container, .form-container {
+flex: 1; 
+margin-bottom: 40px;
+}
+
+.divider {
+  width: 1px; 
+  height: 100%; 
+  background-color: white; 
+  margin: 0 20px; 
+}
+
+.label {
+color: gray;
+font-family: WorkSans-Light, Arial, sans-serif;
+display: block; 
+font-size: 1.2em;
+background-color: transparent; 
+border: none; 
+margin-bottom: 10px; 
+padding: 5px; 
+}
+
+/* Estilos para los input y select */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="tel"],
+textarea,
+select {
+width: 65%;
+padding: 12px; /* Espacio interno */
+margin-bottom: 10px; /* Espacio inferior */
+font-size: 17px; 
+font-family: WorkSans-Light, Arial, sans-serif;
+font-style: italic;
+border: 1px solid rgb(110, 110, 110); /* Borde */
+border-radius: 0px; /* Borde redondeado */
+background-color: transparent;
+color: gray;
+}
+
+
+/* Estilos específicos para los select */
+select {
+width: 65%;
+padding: 12px; /* Espacio interno */
+margin-bottom: 10px; /* Espacio inferior */
+font-size: 17px; 
+font-family: WorkSans-Light, Arial, sans-serif;
+font-style: italic;
+border: 1px solid rgb(110, 110, 110); /* Borde */
+border-radius: 0px; /* Borde redondeado */
+background-color: transparent;
+color: gray;
+}
+
+.option{
+width: 65%;
+padding: 12px; /* Espacio interno */
+margin-bottom: 10px; /* Espacio inferior */
+font-size: 17px; 
+font-family: WorkSans-Light, Arial, sans-serif;
+font-style: italic;
+border: 1px solid rgb(110, 110, 110); /* Borde */
+border-radius: 0px; /* Borde redondeado */
+background-color: transparent;
+}
+
+#send{
+  color: gray;
+  font-family: WorkSans-Light, Arial, sans-serif;
+  border: solid 1px grey;
+  text-decoration: none;
+  padding: 10px 27px;
+}
+
+.alert-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.alert {
+  padding: 20px;
+  background-color: white;
+  color: gray; /* Letra blanca */
+  font-family: 'WorkSans-Regular', Arial, sans-serif; /* Fuente */
+  border: 1px solid gray;
+  text-align: center;
+  max-width: 80%; 
+  z-index: 1001;
+  animation: fadeIn 0.5s ease-out; 
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.closebtn {
+  color: gray;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: rgb(110, 110, 110);
+}
 
 /*? FIN CONTACT US - MAIN */
+
+.top-container{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.top-container h2{
+  font-family: WorkSans-ExtraLight, Arial, sans-serif;
+  margin-left: 40px;
+}
+
+.top-container p{
+  text-align: left;
+  color: white;
+  font-family: WorkSans-Light, Arial, sans-serif;
+  margin-left: 40px;
+  font-size: 18px;
+}
+
+#live{
+  font-size: 20px;
+}
+
+.text-container {
+  flex: 1;
+}
+
+.image-container {
+  flex: 1;
+  text-align: right;
+  margin-right: 40px; 
+}
+
+.top-container a{
+margin-left: 25%;
+margin-top: 15px;
+}
+
+.container-granadines {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+max-width: 800px; /* Ancho máximo del contenedor */
+margin-top: 40px;
+margin-bottom: 70px;
+}
+
+.content-granadines {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.icon-container {
+display: flex;
+flex-direction: column;
+}
+.icon-item {
+display: flex;
+align-items: center;
+margin-bottom: 10px; 
+}
+
+.icon-item img {
+width: 30px; 
+margin-right: 10px; 
+}
+
+
+.image-granadines {
+width: 300px;
+margin-right: 20px; 
+}
+
+.image-granadines img {
+width: 100%; 
+height: auto; 
+}
+
+.text {
+flex: 1;
+font-family: WorkSans-Light, Arial, sans-serif;
+font-size: 16px;
+color: rgb(110, 110, 110);
+}
+
+.grid-container {
+display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-container img{
+width: 35px;
+margin-right: 10px;
+}
+
+.grid-container div {
+display: flex;
+align-items: center;
+
+}
+
+.grid-container p {
+text-align: center;
+font-family: WorkSans-Light, Arial, sans-serif
+}
+
+.grid-item h5 {
+margin-top: 0; 
+margin-bottom: 5px; 
+}
+
+.grid-item {
+text-align: center;
+}
+
+.text a {
+  display: block;
+  text-align: center;
+  margin-top: 20px; 
+  color: gray;
+  font-family: WorkSans-ExtraLight, Arial, sans-serif;
+  border: solid 1px grey;
+  text-decoration: none;
+  padding: 7px 20px;
+}
+
+.text h3{
+font-family: WorkSans-ExtraLight, Arial, sans-serif;
+font-size: 30px;
+color: rgb(110, 110, 110);
+}
+
+.text p{
+text-align: left;
+}
+
 
