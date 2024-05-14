@@ -1,39 +1,47 @@
 /*?FUENTES*/
 @font-face {
-  font-family: WorkSans-Bold;
-  src: url('WorkSans-Bold.ttf') format('truetype');
+  font-family: Gotham-Black;
+  src: url('fonts/Gotham-Black.otf') format('truetype');
 }
-/*font-family: WorkSans-Bold, Arial, sans-serif;*/
+/* font-family: Gotham-Black, sans-serif; */
 
 @font-face {
-  font-family: WorkSans-ExtraLight;
-  src: url('WorkSans-ExtraLight.ttf') format('truetype');
+  font-family: Gotham-Bold;
+  src: url('fonts/Gotham-Bold.otf') format('truetype');
 }
-/*font-family: WorkSans-ExtraLight, Arial, sans-serif;*/
+/* font-family: Gotham-Bold, sans-serif; */
 
 @font-face {
-  font-family: WorkSans-Light;
-  src: url('WorkSans-Light.ttf') format('truetype');
+  font-family: Gotham-Book;
+  src: url('fonts/Gotham-Book.otf') format('truetype');
 }
-/*font-family: WorkSans-Light, Arial, sans-serif;*/
+/* font-family: Gotham-Book, sans-serif; */
 
 @font-face {
-  font-family: WorkSans-Medium;
-  src: url('WorkSans-Medium.ttf') format('truetype');
+  font-family: Gotham-Light;
+  src: url('fonts/Gotham-Light.otf') format('truetype');
 }
-/*font-family: WorkSans-Medium, Arial, sans-serif;*/
+/* font-family: Gotham-Light, sans-serif; */
 
 @font-face {
-  font-family: WorkSans-Regular;
-  src: url('WorkSans-Regular.ttf') format('truetype');
+  font-family: Gotham-Medium;
+  src: url('fonts/Gotham-Medium.otf') format('truetype');
 }
-/*font-family: WorkSans-Regular, Arial, sans-serif;*/
+/* font-family: Gotham-Medium, sans-serif; */
 
 @font-face {
-  font-family: WorkSans-Thin;
-  src: url('WorkSans-Thin.ttf') format('truetype');
+  font-family: Gotham-Thin;
+  src: url('fonts/Gotham-Thin.otf') format('truetype');
 }
-/*font-family: WorkSans-Thin, Arial, sans-serif;*/
+/* font-family: Gotham-Thin, sans-serif; */
+
+@font-face {
+  font-family: Gotham-XLight;
+  src: url('fonts/Gotham-XLight.otf') format('truetype');
+}
+/* font-family: Gotham-XLight, sans-serif; */
+/*?FIN FUENTES*/
+
 /*?FIN FUENTES*/
 
 
@@ -117,7 +125,7 @@ body.loading {
   color: black;
   text-decoration: none;
   font-size: 16px;
-  font-family: WorkSans-Regular, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   margin-left: 30px;
   position: relative; 
 }
@@ -128,7 +136,7 @@ body.loading {
   bottom: -2px; 
   left: 0;
   width: 0;
-  height: 1px;
+  height: 0.3px;
   background-color: black;
   transition: width 0.3s; 
 }
@@ -168,7 +176,7 @@ body.loading {
   color: black;
   text-decoration: none;
   font-size: 16px;
-  font-family: WorkSans-Regular, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   margin-left: 30px;
   position: relative; 
 }
@@ -179,7 +187,7 @@ body.loading {
   bottom: -2px; 
   left: 0;
   width: 0;
-  height: 1px;
+  height: 0.3px;
   background-color: black;
   transition: width 0.3s;
 }
@@ -190,7 +198,7 @@ body.loading {
 
 .footer .footer-right p {
   margin-left: auto;
-  font-family: WorkSans-Light, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   letter-spacing: 3px;
 }
 /*!FIN FOOTER*/
@@ -198,29 +206,11 @@ body.loading {
 /*-------*/
 
 /*? INDEX - MAIN */
-.ph-container-index {
-  text-align: center;
-}
-
-.image-container-index {
-  position: relative;
-  display: inline-block;
-}
-
-.image-container-index img {
-  display: block;
+.image-container-index img{
   width: 100%;
   height: auto;
+  margin-bottom: 20px;
 }
-
-#title-index {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 650px;
-}
-
 
 .set-container {
   display: flex;
@@ -231,18 +221,23 @@ body.loading {
   margin-bottom: 40px;
 }
 
-.set-container h2,h3{
-  font-family: WorkSans-Regular, Arial, sans-serif;
+.set-container h2{
+  
   font-size: 25px;
 }
 
 .set-container h2{
-  color: rgb(110, 110, 110);
+  color: rgb(85, 85, 85);
+  font-family: Gotham-Bold, sans-serif;
+
 }
 
-.set-container h3{
-  color: gray;
+.set-container p{
+  color: rgb(100, 100, 100);
   margin-top: 0px;
+  font-family: Gotham-Light, sans-serif;
+  font-size: 24px;
+  font-weight: 200;
 }
 
 .about-container {
@@ -271,22 +266,21 @@ body.loading {
 }
 
 .text-container h4{
-  color: rgb(110, 110, 110);
-  font-family: WorkSans-Regular, Arial, sans-serif;
+  color: rgb(85, 85, 85);
+  font-family: Gotham-Medium, sans-serif;
   font-size: 25px;
 }
 
 .text-container p{
-  color: gray;
+  color: rgb(100, 100, 100);
   font-size: 20px;
-  font-family: WorkSans-Light, Arial, sans-serif; 
+  font-family: Gotham-Light, sans-serif;
   margin-bottom: 40px;
 }
-
 .text-container a{
-  color: gray;
-  font-family: WorkSans-ExtraLight, Arial, sans-serif;
-  border: solid 1px grey;
+  color: rgb(100, 100, 100);
+  font-family: Gotham-Light, sans-serif;
+  border: solid 1px rgb(100, 100, 100);
   text-decoration: none;
   padding: 7px 20px;
 }
@@ -312,22 +306,23 @@ body.loading {
 }
 
 .texto-izquierdo {
-  color: gray;
+  color: rgb(100, 100, 100);
   font-size: 20px;
-  font-family: WorkSans-Regular, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   line-height: 1.7; 
 }
 
 .texto-derecho {
-  color: gray;
+  color: rgb(100, 100, 100);
   font-size: 20px;
-  font-family: WorkSans-Regular, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   line-height: 1.7;
 }
 
 .texto-derecho p{
-  color:rgb(110, 110, 110) ;
-  font-family: WorkSans-Bold, Arial, sans-serif;
+  color:rgb(85, 85, 85) ;
+  font-family: Gotham-Light, sans-serif;
+  font-weight: 600;
 }
 
 .platos-gastronomy img{
@@ -362,13 +357,13 @@ body.loading {
 }
 
 .end-overlay h1{
-  font-family: WorkSans-Thin, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   font-size: 70px;
   letter-spacing: 5px
 }
 
 .end-overlay h2{
-  font-family: WorkSans-Thin, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   font-size: 50px;
   letter-spacing: 5px;
   margin-bottom: 25px;
@@ -376,7 +371,7 @@ body.loading {
 
 .end-overlay a{
   color: white;
-  font-family: WorkSans-Thin, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   font-weight: 700;
   border: solid 2px white;
   text-decoration: none;
@@ -394,8 +389,8 @@ body.loading {
 }
 
 .p-contact{
-  color: gray;
-  font-family: WorkSans-Light, Arial, sans-serif;
+  color: rgb(100, 100, 100);
+  font-family: Gotham-Light, sans-serif;
   margin-left: 150px;
   font-size: 20px;
 
@@ -405,8 +400,8 @@ body.loading {
 }
 
 #contact-title{
-  color: rgb(110, 110, 110);
-  font-family: WorkSans-Regular, Arial, sans-serif;
+  color: rgb(85, 85, 85);
+  font-family: Gotham-Bold, sans-serif;
   font-size: 25px;
   margin-left: 150px;
 }
@@ -421,14 +416,14 @@ width: 30px;
 }
 
 #email-container p{
-font-family: WorkSans-Light, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
 font-size: 17px;
-color: gray;
+color: rgb(100, 100, 100);
 margin-top: 2px
 }
 
 #email-container a{
-font-family: WorkSans-Light, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
 color: rgb(0, 94, 255);
 font-size: 17px;
 font-style: italic;
@@ -445,14 +440,14 @@ width: 30px;
 }
 
 #phone-container p{
-font-family: WorkSans-Light, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
 font-size: 17px;
-color: gray;
+color: rgb(100, 100, 100);
 margin-top: 2px
 }
 
 #phone-container a{
-font-family: WorkSans-Light, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
 color: rgb(0, 94, 255);
 font-size: 17px;
 font-style: italic;
@@ -476,8 +471,8 @@ margin-bottom: 40px;
 }
 
 .label {
-color: gray;
-font-family: WorkSans-Light, Arial, sans-serif;
+color: rgb(100, 100, 100);
+font-family: Gotham-Light, sans-serif;
 display: block; 
 font-size: 1.2em;
 background-color: transparent; 
@@ -498,12 +493,12 @@ width: 65%;
 padding: 12px; /* Espacio interno */
 margin-bottom: 10px; /* Espacio inferior */
 font-size: 17px; 
-font-family: WorkSans-Light, Arial, sans-serif;
+font-family: Gotham-Light, sans-serif;
 font-style: italic;
-border: 1px solid rgb(110, 110, 110); /* Borde */
+border: 1px solid rgb(85, 85, 85); /* Borde */
 border-radius: 0px; /* Borde redondeado */
 background-color: transparent;
-color: gray;
+color: rgb(100, 100, 100);
 }
 
 
@@ -513,12 +508,12 @@ width: 65%;
 padding: 12px; /* Espacio interno */
 margin-bottom: 10px; /* Espacio inferior */
 font-size: 17px; 
-font-family: WorkSans-Light, Arial, sans-serif;
+font-family: Gotham-Light, sans-serif;
 font-style: italic;
-border: 1px solid rgb(110, 110, 110); /* Borde */
+border: 1px solid rgb(85, 85, 85); /* Borde */
 border-radius: 0px; /* Borde redondeado */
 background-color: transparent;
-color: gray;
+color: rgb(100, 100, 100);
 }
 
 .option{
@@ -526,17 +521,17 @@ width: 65%;
 padding: 12px; /* Espacio interno */
 margin-bottom: 10px; /* Espacio inferior */
 font-size: 17px; 
-font-family: WorkSans-Light, Arial, sans-serif;
+font-family: Gotham-Light, sans-serif;
 font-style: italic;
-border: 1px solid rgb(110, 110, 110); /* Borde */
+border: 1px solid rgb(85, 85, 85); /* Borde */
 border-radius: 0px; /* Borde redondeado */
 background-color: transparent;
 }
 
 #send{
-  color: gray;
-  font-family: WorkSans-Light, Arial, sans-serif;
-  border: solid 1px grey;
+  color: rgb(100, 100, 100);
+  font-family: Gotham-Light, sans-serif;
+  border: solid 1px rgb(100, 100, 100);
   text-decoration: none;
   padding: 10px 27px;
 }
@@ -557,9 +552,9 @@ background-color: transparent;
 .alert {
   padding: 20px;
   background-color: white;
-  color: gray; /* Letra blanca */
-  font-family: 'WorkSans-Regular', Arial, sans-serif; /* Fuente */
-  border: 1px solid gray;
+  color: rgb(100, 100, 100); /* Letra blanca */
+  font-family: Gotham-Light, sans-serif;
+  border: 1px solid rgb(100, 100, 100);
   text-align: center;
   max-width: 80%; 
   z-index: 1001;
@@ -578,7 +573,7 @@ background-color: transparent;
 }
 
 .closebtn {
-  color: gray;
+  color: rgb(100, 100, 100);
   font-weight: bold;
   font-size: 22px;
   line-height: 20px;
@@ -599,14 +594,14 @@ background-color: transparent;
 }
 
 .top-container h2{
-  font-family: WorkSans-ExtraLight, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   margin-left: 40px;
 }
 
 .top-container p{
   text-align: left;
   color: white;
-  font-family: WorkSans-Light, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
   margin-left: 40px;
   font-size: 18px;
 }
@@ -698,7 +693,7 @@ align-items: center;
 
 .grid-container p {
 text-align: center;
-font-family: WorkSans-Light, Arial, sans-serif
+font-family: Gotham-Light, sans-serif;
 }
 
 .grid-item h5 {
@@ -714,21 +709,23 @@ text-align: center;
   display: block;
   text-align: center;
   margin-top: 20px; 
-  color: gray;
-  font-family: WorkSans-ExtraLight, Arial, sans-serif;
-  border: solid 1px grey;
+  color: rgb(100, 100, 100);
+  font-family: Gotham-Light, sans-serif;
+  border: solid 1px rgb(100, 100, 100);
   text-decoration: none;
   padding: 7px 20px;
 }
 
 .text h3{
-font-family: WorkSans-ExtraLight, Arial, sans-serif;
+  font-family: Gotham-Light, sans-serif;
 font-size: 30px;
-color: rgb(110, 110, 110);
+color: rgb(85, 85, 85);
 }
 
 .text p{
 text-align: left;
+color: rgb(100, 100, 100);
+font-family: Gotham-Light, sans-serif;
 }
 
 
