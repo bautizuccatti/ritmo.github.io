@@ -14,3 +14,13 @@ window.addEventListener('load', function() {
         document.body.classList.remove('loading');
     }, 2000); 
 });
+
+
+const input = document.getElementById('number-of-guests');
+input.addEventListener('input', function() {
+    if (this.value < 0) {
+        this.value = 0;
+    } else if (this.value > 6) {
+        this.value = 6;
+    }
+});

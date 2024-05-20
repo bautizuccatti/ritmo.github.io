@@ -34,34 +34,40 @@
     </header>
   <!--!FIN HEADER-->
 
-    <!--MAIN-->
-    <main id="contact">
       <div id="contact-us-container">
       <p class="p-contact">LIVE THE EXPERIENCE</p>
       <h4 id="contact-title">CONTACT US</h4>
-      <p class="p-contact" id="p-contact-description">Fill out the form to receive detailed information about charter services in Ascension Catamaran. <br>
+      <p class="p-contact" id="p-contact-description">
+        Fill out the form to receive detailed information about charter services in Ritmo Catamaran.
         Or get quickly contact by clicking the links below.</p>
       </div>
 
       <div class="contact-form-container">
       <div class="contact-container">
       <div id="email-container">
-        <img src="img/email.png" alt="">
+        <img src="img/mensaje-icon.png" alt="">
         <p> EMAIL </p>
         <a href="mailto:Ritmocatamaran@gmail.com">Ritmocatamaran@gmail.com</a>
       </div>
 
       <div id="phone-container">
-        <img src="img/phone.png" alt="">
+        <img src="img/phone-icon.png" alt="">
         <p> PHONE </p>
         <a href="tel:+54 9 11 2345 6789">+54 9 11 2345 6789 (Argentina)</a>
       </div>
+      
+
+      <div id="social-container">
+        <img src="img/instagram-icon.png" alt="">
+        <p> INSTAGRAM </p>
+        <a href="https://www.instagram.com/ritmofortysix/">@ritmofortysix</a>
       </div>
+</div>
 
       <div class="divider"></div>
 
       <div class="form-container">
-      <form action="/enviar-mensaje" method="post">
+      <form action="https://formsubmit.co/zuccattibautista@gmail.com" method="POST">
         <label for="first-name" class="label">FIRST NAME</label>
         <input type="text" id="first-name" name="first-name" required>
       
@@ -73,16 +79,6 @@
       
         <label for="number-of-guests" class="label">NUMBER OF GUESTS</label>
 <input type="number" id="number-of-guests" name="number-of-guests" min="0" max="6" required>
-<script>
-    const input = document.getElementById('number-of-guests');
-    input.addEventListener('input', function() {
-        if (this.value < 0) {
-            this.value = 0;
-        } else if (this.value > 6) {
-            this.value = 6;
-        }
-    });
-</script>
       
         <label for="date" class="label">DATE</label>
         <input type="date" id="date" name="date" required>
@@ -101,34 +97,10 @@
         <label for="message" class="label">MESSAGE (optional)</label>
         <textarea id="message" name="message" rows="4" cols="50"></textarea>
         <br>
-        <a href="#" class="link" id="send">SEND</a>
+        <button type="submit" id="send"> SEND </button>
 
-        
-        <div class="alert-container">
-            <div class="alert" id="alertBox">
-                <span class="closebtn" onclick="closeAlertBox()">&times;</span>
-                The RITMO team has already received your message, we will contact you soon, good winds!
-            </div>
+         </form>
         </div>
-    
-        <script>
-            
-            function showAlertBox() {
-                document.querySelector('.alert-container').style.display = 'flex';
-            }
-    
-             // Función para cerrar el alert box
-        function closeAlertBox() {
-            
-            window.location.href = 'index.html';
-        }
-    
-            document.getElementById('send').addEventListener('click', function(event) {
-                event.preventDefault();
-                showAlertBox(); 
-            });
-        </script>
-      </form>
       </div>
     </div>
     </main>
