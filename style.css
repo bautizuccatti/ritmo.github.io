@@ -525,17 +525,18 @@
   }
   
   #contact-us-container {
-    position: relative;
-    background-image: url('img/contact-back.JPG');
+    position: relative;    
+    background-image: url('img/CARROUSEL\ FUN\ \(1\).jpg');
     background-size: cover;
-    background-position: center bottom; /* Ajusta la posición para mostrar más de la parte inferior */
-    background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija */
-    padding: 40px; /* Ajusta este valor según sea necesario */
-    color: white; /* Cambia esto según el color del texto que necesites */
+    background-position: center bottom; 
+    background-attachment: fixed; 
+    padding: 40px; 
+    color: white; 
   }
+
   
   #back-contact {
-    display: none; /* Oculta la imagen img ya que se usa como fondo */
+    display: none; 
   }
   
   .contact-form-container {
@@ -548,6 +549,10 @@
   margin-bottom: 40px;
   }
   
+  .form-container{
+    margin-top: 2px;
+  }
+
   .divider {
     width: 1px; 
     height: 100%; 
