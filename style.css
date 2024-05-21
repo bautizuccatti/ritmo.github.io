@@ -223,7 +223,7 @@
   }
   
   .image-container-tow img{
-    width: 650px;
+    width: 568px;
   }
   
   .text-container {
@@ -722,7 +722,7 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: 70px;
   }
   
@@ -730,7 +730,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 200px;
+  margin-right: 300px;
   }
   .icon-container {
   display: flex;
@@ -764,6 +764,8 @@
   font-family: WorkSans-Light, Arial, sans-serif;
   font-size: 16px;
   color: rgb(110, 110, 110);
+  margin-left: 55px;
+  margin-right: 70px;
     
   }
   
