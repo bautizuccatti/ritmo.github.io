@@ -223,7 +223,7 @@
   }
   
   .image-container-tow img{
-    width: 550px;
+    width: 650px;
   }
   
   .text-container {
@@ -297,8 +297,8 @@
   }
   
   .text-grid {
-    margin-left: 15px;
-    margin-top: 15%;
+    margin-left: 40px;
+    margin-top: 20%;
   }
   
   .horizontal .carousel-inner {
@@ -799,26 +799,30 @@
   }
   
   .text a {
-    display: block;
-    text-align: center;
-    margin-top: 20px; 
     color: rgb(100, 100, 100);
     font-family: Gotham-Light, sans-serif;
     border: solid 1px rgb(100, 100, 100);
     text-decoration: none;
-    padding: 7px 20px;
+    padding: 7px 20px;   
   }
   
   .text h3{
-    font-family: Gotham-Light, sans-serif;
-  font-size: 30px;
-  color: rgb(85, 85, 85);
+    color: rgb(85, 85, 85);
+    font-family: Gotham-Medium, sans-serif;
+    font-size: 25px;
   }
   
   .text p{
-  text-align: left;
-  color: rgb(100, 100, 100);
-  font-family: Gotham-Light, sans-serif;
+    color: rgb(100, 100, 100);
+    font-size: 20px;
+    font-family: Gotham-Light, sans-serif;
+    margin-bottom: 40px;
+  }
+
+  .info p{
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+    font-family: Gotham-Light, sans-serif;
   }
 
   .charter-text{
