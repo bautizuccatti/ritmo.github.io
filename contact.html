@@ -62,10 +62,12 @@
         <p> INSTAGRAM </p>
         <a href="https://www.instagram.com/ritmofortysix/">@ritmofortysix</a>
       </div>
+      <div id="img-contact">
+      <img src="img/CONTACT-US.JPG" alt=""> 
+      </div>
 </div>
 
       <div class="divider"></div>
-
       <div class="form-container">
       <form action="https://formsubmit.co/zuccattibautista@gmail.com" method="POST">
         <label for="first-name" class="label">FIRST NAME</label>
@@ -97,8 +99,35 @@
         <label for="message" class="label">MESSAGE (optional)</label>
         <textarea id="message" name="message" rows="4" cols="50"></textarea>
         <br>
+        
         <button type="submit" id="send"> SEND </button>
 
+        
+        <div class="alert-container">
+            <div class="alert" id="alertBox">
+                <span class="closebtn" onclick="closeAlertBox()">&times;</span>
+                The RITMO team has already received your message, we will contact you soon, good winds!
+            </div>
+        </div>
+    
+        <script>
+          function showAlertBox() {
+              document.querySelector('.alert-container').style.display = 'flex';
+          }
+      
+          function closeAlertBox() {
+        document.querySelector('.alert-container').style.display = 'none';
+        window.location.href = 'index.html';
+    }
+      
+          document.querySelector('form').addEventListener('submit', function(event) {
+              event.preventDefault(); // Evitar el comportamiento predeterminado del envío del formulario
+              
+              // Realizar cualquier otra operación que necesites aquí, como enviar los datos a través de AJAX
+              
+              showAlertBox();
+          });
+      </script>
          </form>
         </div>
       </div>
